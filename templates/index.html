@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facial Recognition</title>
+  <!-- Lien vers votre fichier CSS externe -->
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+
+  <!-- Conteneur pour le message de réponse -->
+  <div class="message-container">
+    {% if message %}
+      <p class="response-message">{{ message }}</p>
+    {% endif %}
+  </div>
+
+  <div class="container">
+    <h1>FACIAL RECOGNITION</h1>
+
+    <!-- ======== FORMULAIRE ======== -->
+    <form action="/compare" method="POST" enctype="multipart/form-data">
+      <div class="upload-section">
+        
+        <div class="upload-box">
+          <img src="/static/placeholder1.png" alt="Placeholder Image" class="placeholder">
+          <label for="img1">Image 1</label>
+          <input type="file" id="img1" name="img1" accept="image/jpg" required>
+        </div>
+
+        <div class="upload-box">
+          <img src="/static/placeholder2.png" alt="Placeholder Image" class="placeholder">
+          <label for="img2">Image 2</label>
+          <input type="file" id="img2" name="img2" accept="image/jpg" required>
+        </div>
+
+      </div>
+      <!-- ======== BOUTON SUBMIT ======== -->
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    <!-- ======== FIN DU FORMULAIRE ======== -->
+  </div>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,130 @@
+/* ====================== RESET DE BASE ====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* ====================== STYLE DU BODY ====================== */
+  body {
+    /* Dégradé statique pour limiter les ressources */
+    background: linear-gradient(to right, #3f2b96, #a8c0ff);
+    color: #fff;
+    min-height: 100vh;
+  
+    /* Pour centrer le contenu verticalement et horizontalement */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  /* ====================== MESSAGE DE RÉPONSE ====================== */
+  .message-container {
+    text-align: center;
+    margin-bottom: 1.5rem; /* Séparation avec le bloc principal */
+  }
+  
+  .response-message {
+    display: inline-block; /* Ajuste la largeur au contenu */
+    padding: 0.75rem 1rem;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  /* ====================== CONTENEUR PRINCIPAL ====================== */
+  .container {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* ====================== TITRE PRINCIPAL ====================== */
+  .container h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  /* ====================== SECTION UPLOAD ====================== */
+  .upload-section {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  
+  .upload-box {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 240px;
+    text-align: center;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  .upload-box:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Placeholder images */
+  .placeholder {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+  }
+  
+  /* Label & Input */
+  label {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: 500;
+  }
+  
+  input[type="file"] {
+    width: 100%;
+    font-size: 0.9rem;
+    background: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* ====================== BOUTON SUBMIT ====================== */
+  .submit-btn {
+    background: #ff7f50;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 127, 80, 0.3);
+  }
+  .submit-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+  
+  
+  
