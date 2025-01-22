@@ -4,7 +4,7 @@ import os, face_recognition
 
 app = Flask(__name__)
 
-app.config['UPLOAD_FOLDER'] = '/Users/mahassadiadoumalickjean/Desktop/tp_api/uploads'
+app.config['UPLOAD_FOLDER'] = 'uploads'
 
 @app.route('/', methods=['GET'])
 def index():
